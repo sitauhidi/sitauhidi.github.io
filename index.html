@@ -97,6 +97,17 @@
   .pubs .au, .pubs .v { display: block; font-size: 15px; color: var(--grey); }
   .pubs .v { font-style: italic; }
   .me { font-weight: 700; color: var(--ink); }
+  .news { list-style: none; padding: 0; margin: 0; }
+  .news li { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .news li:first-child { border-top: 0; }
+  .news .when { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--grey); padding-top: 3px; white-space: nowrap; }
+  .news .what { font-size: 16px; }
+  .news .more { font-weight: 700; white-space: nowrap; }
+  .soon { display: inline-block; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--red); border-radius: 4px; padding: 1px 7px; margin-right: 6px; vertical-align: 2px; }
+  .older { margin-top: 6px; }
+  .older summary { cursor: pointer; font-weight: 700; color: var(--red); min-height: 44px; display: flex; align-items: center; }
+  .older summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+  @media (max-width: 480px) { .news li { grid-template-columns: 1fr; gap: 2px; } }
   .xp { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
   .xp li { position: relative; padding: 0 0 22px 22px; }
   .xp li:last-child { padding-bottom: 0; }
@@ -183,6 +194,32 @@
       <li><a href="https://github.com/DIPSA-QUB/NI-ORCA" data-repo="DIPSA-QUB/NI-ORCA"><span class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span><span class="txt"><span class="nm">NI-ORCA</span><span class="ds">Parallel graphlet orbit counting</span><span class="meta" hidden></span></span><svg class="go" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr">(GitHub)</span></a></li>
       <li><a href="https://github.com/DIPSA-QUB/ParaGrapher" data-repo="DIPSA-QUB/ParaGrapher"><span class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span><span class="txt"><span class="nm">ParaGrapher</span><span class="ds">Parallel loading of compressed graphs</span><span class="meta" hidden></span></span><svg class="go" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr">(GitHub)</span></a></li>
     </ul>
+  </section>
+
+  <section>
+    <h2>News &amp; talks</h2>
+    <ul class="news">
+      <li><span class="when">Nov 2026</span><span class="what"><strong class="soon">Upcoming</strong> Presenting a case study of the Kelvin2 supercomputer at HPC-ODA 2026, the 1st International Workshop on HPC Operational Data Analytics, at SC26 in Chicago.</span></li>
+      <li><span class="when">Jul 2026</span><span class="what">Volunteered at the ACM International Conference on Supercomputing (ICS 2026), hosted in Belfast.</span></li>
+      <li><span class="when">Jun 2026</span><span class="what">Talk: “A Frequency-Invariant Approach to Energy-Efficient Computing” at HPC Days 2026, Durham. <a class="more" href="https://blogs.qub.ac.uk/dipsa/?p=4044">Read more</a></span></li>
+      <li><span class="when">Apr 2026</span><span class="what">Mini-workshop on “The Role of Research Software in Sustainable Computing” at the Collaborations Workshop 2026 (CW26), Belfast. <a class="more" href="https://blogs.qub.ac.uk/dipsa/mini-workshop-organised-at-collaboration-workshop-2026-cw26/">Read more</a></span></li>
+      <li><span class="when">Nov 2025</span><span class="what">URJA, my Slurm plugin for energy-efficient computing, shown as a poster at the NI-HPC conference by our MIT intern, Giuliana Cabrera Sanchez.</span></li>
+      <li><span class="when">Sep 2025</span><span class="what">Lightning talk introducing NI-ORCA at IEEE CLUSTER 2025, Edinburgh. <a class="more" href="https://blogs.qub.ac.uk/dipsa/?p=3752">Read more</a></span></li>
+    </ul>
+    <details class="older">
+      <summary>Earlier news</summary>
+      <ul class="news">
+        <li><span class="when">Jul 2025</span><span class="what">Released OrbitSI on PyPI, with NetworkX support: pip install orbitsi. <a class="more" href="https://pypi.org/project/orbitsi/">Read more</a></span></li>
+        <li><span class="when">Mar 2025</span><span class="what">Talk at the NI Science Festival on the energy cost of AI and computing.</span></li>
+        <li><span class="when">Dec 2024</span><span class="what">Presented OrbitSI at IEEE ICKG 2024, Abu Dhabi. <a class="more" href="https://blogs.qub.ac.uk/dipsa/paper-presentation-on-orbitsi-at-ickg-2024/">Read more</a></span></li>
+        <li><span class="when">Nov 2024</span><span class="what">Started as a Post-Doctoral Research Associate in the Kelvin Living Lab at Queen’s.</span></li>
+        <li><span class="when">Nov 2023</span><span class="what">Talk on using the Kelvin2 supercomputer for fast subgraph isomorphism search, 3rd NI-HPC User Conference.</span></li>
+        <li><span class="when">Nov 2023</span><span class="what">Paper presented at META 2023, Marrakech. <a class="more" href="https://blogs.qub.ac.uk/dipsa/machine-learning-based-per-instance-algorithm-selection-for-high-performance-subgraph-isomorphism-enumeration/">Read more</a></span></li>
+        <li><span class="when">Jul 2023</span><span class="what">Poster on graphlet-based filtering at the HiPEAC ACACES 2023 summer school, Fiuggi, Italy. <a class="more" href="https://blogs.qub.ac.uk/dipsa/poster-presentation-graphlet-based-filtering-for-high-performance-subgraph-isomorphism-search/">Read more</a></span></li>
+        <li><span class="when">Mar 2023</span><span class="what">Tutorial: “Introduction to Data Analytics using Hadoop and Spark”, PhD workshop on parallel processing, Queen’s.</span></li>
+        <li><span class="when">May 2022</span><span class="what">Won the Three Minute Thesis (3MT) competition, School of EEECS, Queen’s.</span></li>
+      </ul>
+    </details>
   </section>
 
   <section>
