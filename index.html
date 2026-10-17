@@ -108,6 +108,12 @@
   .older summary { cursor: pointer; font-weight: 700; color: var(--red); min-height: 44px; display: flex; align-items: center; }
   .older summary:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
   @media (max-width: 480px) { .news li { grid-template-columns: 1fr; gap: 2px; } }
+  .fund { list-style: none; padding: 0; margin: 0; }
+  .fund li { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .fund li:first-child { border-top: 0; }
+  .fund .fn { font-weight: 700; }
+  .fund .fd { color: var(--grey); }
+  @media (max-width: 480px) { .fund li { grid-template-columns: 1fr; gap: 2px; } }
   .xp { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
   .xp li { position: relative; padding: 0 0 22px 22px; }
   .xp li:last-child { padding-bottom: 0; }
@@ -335,6 +341,17 @@
       <li>Winner, Three-Minute Thesis, School of EEECS, Queen’s University Belfast</li>
       <li>Winner, 8th Annual Researcher Poster Competition, Faculty of Engineering and Physical Sciences, Queen’s (2022)</li>
       <li>Nominated, PDC PostDoc Award, Faculty of Engineering and Physical Sciences, Queen’s</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Funding &amp; support</h2>
+    <ul class="fund">
+      <li><span class="fn">Kelvin Living Lab</span><span class="fd">EPSRC <a href="https://gtr.ukri.org/projects?ref=EP%2FZ531054%2F1">EP/Z531054/1</a>: funds my post-doctoral position at Queen’s</span></li>
+      <li><span class="fn">NI-HPC (Kelvin2)</span><span class="fd">EPSRC <a href="https://gtr.ukri.org/projects?ref=EP%2FT022175%2F1">EP/T022175/1</a>: access to the Kelvin2 tier-2 supercomputer</span></li>
+      <li><span class="fn">RAPID</span><span class="fd">EPSRC <a href="https://gtr.ukri.org/projects?ref=EP%2FV02860X%2F1">EP/V02860X/1</a></span></li>
+      <li><span class="fn">PhD scholarship</span><span class="fd">Ministry of Education, Government of India, through Tezpur University (Queen’s–Tezpur collaboration)</span></li>
+      <li><span class="fn">Travel grants</span><span class="fd">HiPEAC travel grant for the ACACES 2023 summer school, Italy; SPRC travel awards for META 2023, Morocco, and ICDM/ICKG 2024, Abu Dhabi</span></li>
     </ul>
   </section>
 
